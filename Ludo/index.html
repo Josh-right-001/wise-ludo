@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WISE LODO | Online Game</title>
+
+    <!-- HTML -->
+
+
+    <!-- Custom Styles -->
+    <link rel="shortcut icon" href="./images/me-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="./Game/diceFront.png" alt="Wise Ludo Photo">
+        <h1 id="flash-text">Wise Ludo</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display:none;">
+        <h2>Bienvenue aux Wise Ludo, choisissez vos options préférées</h2>
+        <div class="option">
+            <input type="radio" id="assistance" name="option" value="assistance">
+            <label for="assistance">Assistance</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="player" name="option" value="player">
+            <label for="player">Player</label>
+        </div>
+    </div>
+
+    <!-- Player Form -->
+    <div id="player-form" style="display:none;">
+        <div style="text-align: center; color: blue; font-weight: bolder; font-family: calibri; font-size: 25px;">
+            Hello, <br> veuillez remplire ces elements
+            <a href="./Game/index.html"></a>
+        </div>
+        <input type="text" placeholder="Your name" id="name">
+        <input type="number" placeholder="Le montant" id="amount">
+        <input type="datetime-local" id="datetime">
+        <textarea placeholder="Un motif pour valider" id="motif"></textarea>
+        <select style="margin-left: 10px !important;" id="payment-method">
+            <caption>Choisissez votre moyen de paiment</caption>
+          <option value="airtel" style="background: #ff0000; color: white; padding: 15px; text-align: center; margin: 20px; font-size: 15px;">Sur Airtel Money</option>
+          <option value="orange" style="background: #ffa500; color: white; padding: 15px; text-align: center; margin: 20px; font-size: 15px;">Sur Orange Money</option>
+          <option value="afri" style="background: #ac0164; color: white; padding: 15px; text-align: center; margin: 20px; font-size: 15px;"> Sur Afri Money</option>
+        </select>
+        <details>
+            <div class="opty">
+                Bienvenue sur le jeux ludo games des sages,
+                <p>ce jeux à été développer par <a class="mer" href="https://josh-right-congo.netlify.app">Josh right</a>.</p>
+                <div class="tyu"><b>buy me coeffe</b> <br>
+                    <a class="mer" href="tel:+243974156933">by airtel money </a>
+                </div>
+            </div>
+            <style>
+                .opty {
+                    font-size: 18px;
+                    font-family: calibri;
+                    color: black;
+                    text-align: left !important;
+                }
+                
+                .mer {
+                    font-family: calibri;
+                    font-size: bolder;
+                    color: blue;
+                    text-decoration: none;
+                }
+                
+                .tyu {
+                    font-family: calibri;
+                    font-weight: bolder;
+                }
+                
+                details {
+                    margin: 10px;
+                    padding: 15px;
+                }
+            </style>
+        </details>
+        <button id="submit-btn">Submit</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" style="display:none;">
+        <div id="popup-content">
+
+        </div>
+
+        <button id="continue-btn">Continue</button>
+    </div>
+    <!-- Project -->
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!--<select class="containsh">
+  <option value="input"><input type="number" placeholder="votre numéro de telephone"> </option>
+  <option value="password"> <input type="number" placeholder="votre mot de paase"></option>
+</select>

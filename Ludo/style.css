@@ -1,0 +1,144 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-family: calibri !important;
+    background-image: url(./Game/ludoBordbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#preloader {
+    background: linear-gradient(to bottom, blue, black);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#flash-text {
+    color: white;
+    font-size: 3em;
+    animation: flash 1.5s infinite;
+}
+
+@keyframes flash {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+#main-content,
+#player-form,
+#popup {
+    text-align: center;
+}
+
+#main-content {
+    background: linear-gradient(to bottom, blue, black);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.option {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    border: 1px solid #ffffff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.option:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+#player-form input,
+#player-form textarea,
+#player-form select {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background: #2024ff23;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black !important;
+}
+
+#player-form {
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+select option {
+    padding: 15px;
+    margin: 10px;
+}
+
+#submit-btn,
+#continue-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, blue, black);
+    border: #001483 1px solid !important;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+#submit-btn,
+#continue-btn:hover {
+    padding: 10px 20px;
+    background: #ffffff;
+    border: #001483 1px solid;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #001483;
+    border: none;
+    cursor: pointer;
+}
+
+#popup-content {
+    background: linear-gradient(-90deg, #f0f0f0, white);
+    /* background-image: url(./images/me-white.png) !important; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: left !important;
+    border-radius: 10px;
+    font-weight: bolder;
+}
